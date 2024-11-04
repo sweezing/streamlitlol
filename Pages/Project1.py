@@ -1,6 +1,3 @@
-from asyncore import write
-from distutils.command.upload import upload
-
 import streamlit as st
 import pandas as pd
 import numpy as np
