@@ -10,6 +10,8 @@ import numpy as np
 image = Image.open("img/pupaduta.png")
 # navlogo = Image.open("img/123.svg")
 
+
+logo_path = os.path.join(os.path.dirname(__file__), "img", "123.svg")
 st.set_page_config(initial_sidebar_state="collapsed", page_icon=image)
 
 
@@ -35,7 +37,7 @@ style = {
         "background-color": "rgba(255, 255, 255, 0.35)",
     },
 }
-pages = st_navbar(pages, styles= style)
+pages = st_navbar(pages, styles= style, logo_path=logo_path)
 
 styles = {
     "nav": {
