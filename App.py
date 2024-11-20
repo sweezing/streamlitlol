@@ -1,7 +1,7 @@
 import os
 import streamlit as st
 from streamlit_navigation_bar import st_navbar
-from Pages import Home, Project1, Project2, Project3
+from Pages import Home, Project2, Project3, Project1
 
 from PIL import Image
 import pandas as pd
@@ -15,7 +15,7 @@ logo_path = os.path.join(os.path.dirname(__file__), "img", "123.svg")
 st.set_page_config(initial_sidebar_state="collapsed", page_icon=image)
 
 
-pages = ['Home','Project1','Project2','Project3']
+pages = ['HOME','FILE (P1)','WEB (P2)','SMTH (P3)']
 
 style = {
     "nav": {
@@ -67,13 +67,13 @@ styles = {
     },
 }
 
-if pages == 'Home':
+if pages == 'HOME':
     Home.Home().app()
-elif pages == 'Project1':
+elif pages == 'FILE (P1)':
     Project1.Project1().app()
-elif pages == 'Project2':
+elif pages == 'WEB (P2)':
     Project2.Project2().app()
-elif pages == 'Project3':
+elif pages == 'SMTH (P3)':
     Project3.Project3().app()
 else:
     Home.Home().app()
