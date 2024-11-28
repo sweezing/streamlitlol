@@ -34,6 +34,7 @@ class Project1:
 
                 try:
                     st.area_chart(filtered_df, height=400, width=600)
+
                 except:
                     st.write("Can't draw so manny data")
         else:

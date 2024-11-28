@@ -19,7 +19,7 @@ pages = ['HOME','FILE (P1)','WEB (P2)','SMTH (P3)']
 
 style = {
     "nav": {
-        "background-color": "gray",
+        "background-color": "rgb(100, 100, 80)",
     },
     "div": {
         "max-width": "32rem",
@@ -41,7 +41,7 @@ pages = st_navbar(pages, styles= style, logo_path=logo_path)
 
 styles = {
     "nav": {
-        "background-color": "gray",
+        "background-color": "rgb(255, 255, 255)",
         "display": "flex",
         "justify-content": "center",
     },
